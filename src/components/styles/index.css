@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital@1&display=swap');
+
+.header{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding-left: 100px;
+}
+
+.header ul {
+    margin-left:20px ;
+}
+
+
+.header a{
+    cursor: pointer;
+    margin: 10px;
+    font-weight: 700;
+    font-size: 20px;
+    transition: all 300ms;
+    font-family: 'Fira Sans', sans-serif;
+
+}
+
+.header a:hover{
+    color: #e95095;
+}
+
+
+.logo i{
+    animation: spiner;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+@keyframes spiner{
+    from{
+		transform:rotateZ(0deg)
+	}to{
+		transform: rotateZ(360deg);
+	}
+}
+
+
+.container-title {
+    display: flex;
+    justify-content:space-between;
+    padding: 20px;
+}
+
+.container-title h1{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.main-cont{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    position: relative;
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.covid-data{
+    margin: 20px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    border-radius: 5px 30px 5px 5px;
+    border:1px solid #ccc;
+    width: 30%;
+    transition: all 300ms;
+}
+
+.covid-data:hover{
+    box-shadow: 1px 1px 3px #ccc;
+}
+
+
+.chargin{
+    position: absolute;
+    top: 250px;
+    left: 580px;
+}
+
+
+.btn-next{
+    margin-left: 20px;
+}
